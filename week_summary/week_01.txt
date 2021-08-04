@@ -1,0 +1,68 @@
+07/26/21
+데이터 경진대회, hackertone, kaggle competition등에 참가해서 경험을 쌓아라. (kaggle입상은 아주 가치가 있다. 모셔간다.)
+LSTM은  Deep Learning module인데 시계열 데이터처리하는데 유용하다.
+Excel도 잘해야 한다.
+파이썬은 memory를 낭비해도 상관없다. 대범하게 사용자 편이가 우선이다.
+파이썬에 경험이 있으면 보다  pythonic한 coding을 하도록 노력하자. 객체지향, 함수등을 익혀서 Advanced Level로 발전시켜라.
+JAVA는 객체지향을 모르면 할 수가 없다. Entry Barrier가 Python에 비해 매우 높다.
+Open Source환경에서 다른 분들이 만든 code를 짜집기를 잘하는 사람이 coding도 잘한다.
+Google에서 만든 Tensorflow+Keras가 AI(DeepLearning, NeuralNetwork, CNN, RNN..)작업에 pairing된다. Pytorch는 FB이 만들었다.
+Open API를 이용해서 번역, 이미지검색등 모든 app을 만드는데 사용할 수 있다.
+Algorithm을 배워야 한다.
+https://github.com/naver/d2codingfont의 font를 이용하면 모든 알파벹의 넓이가 똑같고 한글은 두배이다.
+VS CODE가 개발 Too중에 best이다. 이안에서 jupyter notebook을 사용할 수 있다.
+만들어야 할 project들 : python, data analysis, machine learning, AI, project...(5개 이상)
+개발자로서 이력을 증명하기 위한 제일 좋은 방법은 GitHub에 매일 한번 이상 push하는거다.
+deprecated : no more support from now on
+open cmd > mkdir Workspace > cd workspace > mkdir test > cd test > git init
+cd \ : go back up to the root folder(C:/, D:/, E:/)
+README.md에는 repository안에 어떤 내용이 있는지 적는 곳이다.
+markdown에는 제목 # : 글씨크기, 목록 - : unordered list
+youtube에 생활코딩이라는 사이트도 있다.
+git clone할 때, GitHub에서 url복사하고 cmd에 git clone 다음에 붙여놓고, 내가 원하는 directory이름을 붙여라.
+copy hello2.txt hello3.txt (hello2.txt를 hello3.txt로 복사해라.)
+git add . 는 내용을 추가할때뿐만 아니라 내용을 뺄때도 사용한다.
+GitHub에서 + 버튼 누르고 new repository한 다음 remote에서 사용할 name, description적고 create a new repository버튼을 눌러라.
+local로 와서 새로운 remote이면 git remote add origin https://github.com/rubinkim/name.git하고 이작업은 한번만 한다.
+
+어떤 변경을 한 후에는 
+git add .
+git commit -m "message"
+git push
+이 3개의 command만 사용하면 된다.
+
+만약 remote에서 어떤 변경을 한후에 local로 가져오려면 git pull하면 된다.
+
+
+07/27/21
+앞으로의 작업은 google colab에서 코딩하고 local disk에 저장하고 github에 push할거다
+print()를 실행하면 enter가 마지막에 실행되어서 줄이 바뀐다
+gpu나 tpu는 Tensorflow + Keras로 Deep Learning할때만 성능을 발휘한다. Scikit-learn이나 data분석할때는 소용없다
+한글의 경우 windows에서는 cp949, euc-kr, ansi와 같은 완성형 인코딩을 사용하고 있어서 한자당 16비트(2바이트)인데 반해 일반 web상에서는 utf-8(조합형)을 사용하고 있어서 초성, 중서, 종성마다 
+각각 1바이트씩 구성하고 있다. memo장에서 한글 작업을 한뒤에는 utf-8으로 인코딩해야 한다. 예를 들어 "가"와 "각"을 완성형 인코딩으로 하면 0x1234, 0x1235인데, utf-8으로는 0x010100, 0x010101이다.
+정수와 실수는 서로 다른 표현방식으로 같이 연산할 때는 문제가 있을 수 있다.
+실수는 부동소수점에 따라 지수와 가수로 나눠서 저장하는데 지수는 소수점이하의 수, 가수는 10의 몇승을 곱해야 하느냐를 표현하는거다. 
+
+07/28/21
+string.split() method라고 한다. 객체가 무엇을 할 수 있는 동작
+math.abs() math 모듈에 있는 함수(function)
+문자열은 난해하고 내용이 방대하다. 정규표현식도 있다.
+
+자료가 연속적으로 들어간 경우를 시퀀스자료형이고 반복문을 사용할 수가 있다.(list, tuple, range, string)
+반복문을 사용할 때, empty list나 empty dict이 많이 사용된다.
+JavaScript
+Object
+obj = [key:value]
+obj.key
+
+리스트, 스트링, 딕셔너리 자료형을 조작하는 방법은 많고 어렵지만 잘 알아야 데이터 전처리할 때 엄청 도움된다.
+조건문, 반복문을 잘 해야한다.
+pseudo code 
+if 비가 오면
+   우산을 챙긴다
+
+pass : 내가 지금은 일단 생략하고 나중에 코드를 집어넣을게요.
+
+조건문, 반복문 그리고 자료형을 알고 나면 왠만한 문제를 풀어낼 수가 있다. 
+CRUD(Create, Read, Update, Delete)를 각각의 자료형에서 레퍼런스 안보고 그냥 할 수 있을 정도가 되어야 한다.
+Online에 있는 문제은행 형식같은 코딩을 측정하는 사이트에서 능력을 측정해봐야 한다. 그래야 실력이 는다.

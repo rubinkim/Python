@@ -1,0 +1,15 @@
+14 Growing industries of the future : 2021 Edition(Source : https://www.youtube.com/watch?v=cEUJ0EO-ncA, by Intelligent Encounters)
+- IOT
+- AI
+- Cyber Security
+- Genomics
+- Drones
+- Robotics
+- Virtual Reality
+- Nano Technology
+- Renewable Energy
+- Sharing Economy
+- E-Learning
+- Big Data
+- 3D Printing
+- Blockchain Technology

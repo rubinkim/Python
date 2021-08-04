@@ -1,0 +1,48 @@
+for문의 기원은 C 언어이다. JAVA에서 array나 list가 있으면 각 element에 대해서 enhanced for loop을 구사한다.
+for (i=0; i<10; i++){  # (i=0; i<10; i++)가 python에서는 range()로 구현한다.
+    반복할 내용
+}
+for element in list:
+    반복할 내용
+
+반복할 회수가 정해져 않으면 while을 사용한다.
+for loop은 가장 기본적인 프로그램도구로서 프로그래밍안에서 어떻게 이걸 사용할지를 항상 생각해야 한다.
+조건문 반복문은 나의 피와 살이 돼야 한다
+변수명으로 두단어의 조합이 유용한데, notation으로 변수는 소문자로 시작해야 하고, 대문자로 쓰면 Class를 의미한다.
+camelNotation - Java
+snake_notation - Python
+
+한글로 된 문제를 프로그램으로 바꾸는게 어렵다
+ligature는 합체라는 의미이다
+
+앞으로 다뤄야할 데이터는 최소한 2차원이다. 여기서 반복문을 사용하려면 for loop을 행(outer)과 열(inner)에 대해서 중첩 반복문을 
+사용해야 한다.
+
+Unit22,23등은 응용이다
+indexing, slicing, append, remove : list method중 제일 중요한것들
+
+memory안에는 stack이라는data structure가 있다(LIFO). elevator
+queue는 입구, 출구가 따로 있어서 FIFO이다. 줄(line)
+stack이나 queue를 list로 구현한다
+
+a + b + c = 1000 (a < b < c)
+a*a + b*b = c*c 인 피타고라스 수는?
+
+07/30/21
+파이썬을 통해서 객체지향을 익혀보자
+f'{1:02d}' : '01'
+크롤링을 하게 되면 looping돌아가기 전에 빈리스트 만들어서 append하는 패턴이 많이 발생한다.
+문자열을 굉장히 편하게 다뤄야 한다.
+
+전처리
+- Null data
+- 중복 데이터 확인
+- 한글 / 영어 혼합 --> 한글, 공백만 남기고 다 삭제
+- 영어 --> 구두점제거
+
+C에서는 print("%d", integer) %d:정수 %f:실수 %s:문자 %b:바이너리(2진) %o:
+항상 f string을 이용해라
+
+일차원 리스트, 문자열, 딕셔너리등은 현실에서 엄청 많이 사용된다. 특히 OPEN API에서 데이터를 추출하려면 문자열,
+딕셔너리, 리스트등이 어우려져서 매우 어렵다.
+

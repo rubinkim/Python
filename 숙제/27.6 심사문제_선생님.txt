@@ -1,0 +1,16 @@
+선생님, 27.6 심사문제: 특정 문자가 들어있는 단어 찾기를 아래와 같이 함수를 만들어서 풀어서 간신히 통과하긴 했는데, 너무 비효율적인
+거 같다는 생각이 들어서 함수지정이나 파일 읽기과정에서 개선할 부분을 말씀해주시면 감사하겠습니다.
+
+def remove_punctuation(x):
+    from string  import punctuation
+    for char in punctuation:
+        if char in x:
+            x = x.replace(char, '')
+    return x    
+    
+with open('words.txt', 'r') as file:
+    s = file.read()
+    for word in s.split():
+        word = remove_punctuation(word).lower()
+        if word.count('c') >= 1:
+            print(word)
