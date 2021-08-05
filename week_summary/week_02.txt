@@ -78,3 +78,55 @@ email 정규표현식
 re.sub('[^ㄱ-ㅎ ㅏ-1가-힣 ]', '', text)  # 한글과 공백이 아니면 다 없애라
 
 다른 정규현식 사이트에 가서 확인을 해야 한다. 외우기에는 양이 너무 많다. (정규식 테스트 사이트 모임)
+
+*.py, *.html, *.css를 편집하려면 jupyter notebook으로는 안되고 vscode같은 편집기가 필요하다.
+내가 모듈을 만들어서 사용할 수 있어야만 큰 프로그램을 작성할 수 있다.
+
+가상 환경(virtual environment)
+- 프로젝트 : Python 3.7, numpy, pandas, matplotlib
+- 경진대회 : Python 3.6으로 하세요라고 할 수도 있다. 
+- 기본환경 : Python 3.8, 다양한 라이브러리  ----------------- base
+
+각각의 python의 numpy는 버전이 다를 가능성이 많다. 개발환경 구축하는게 쉽지가 않다
+위에서처럼 각각의 목적에 따라 가상환경을 구축할 수가 있다.
+
+가상환경을 만들어 주는 프로그램 -virtualenv, Anaconda
+Anaconda에서 conda라는 명령으로 가상환경을 만들 수 있음
+
+conda info --envs  # 가상환경을 볼 수 있음
+conda create -n test python=3.7  # 가상환경 설치
+conda env list  # 가상환경 리스트
+conda deactivate # base환경에서 빠져 나왔음
+conda activate test      # test 환경으로 들어왔기 때문에 python3.7로 버전이 변경
+
+pip install package-name  # 가상환경을 무시하고 설치. 가상환경을 사용하는 사람은 pip을 먼저 사용하지 마라.
+
+KoNLPy : Korean Natural Language Processing Python : pip로만 설치가 가능하다.
+
+conda activate 가상환경
+(가상환경)conda install package-name
+(가상환경)conda install -c conda-forge package-name
+
+base = 2
+
+def square(n):
+    return base ** 2
+
+어떤 파일을 라이브러리로 사용하지 말고 직접 실행하고 싶다면 
+if __name__ == '__main__': 나로부터 출발한다는 의미
+라이브러리로 사용할 때는 __name__값이 달라진다.
+파이썬에서는 main은 내 프로그램이 단독으로 돌아가면 내가 main이고 라이브러리고 불려가면 그쪽이 main이다
+내가 만든 프로그램이 제대로 돌아가는지 테스트하기 위해 if 절밑에 테스트할 내용을 코딩한다.
+
+base = 2
+
+def square(n):
+        return  n ** base
+
+print(square(5))
+
+
+if  __name__ == '__main__':
+    print(base)
+    print(square(5))
+
