@@ -130,3 +130,4 @@ if  __name__ == '__main__':
     print(base)
     print(square(5))
 
+백준 파이썬
